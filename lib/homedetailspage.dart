@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterresponsiveweb/customtheme.dart';
 
 class HomeDetailsScreen extends StatelessWidget {
   const HomeDetailsScreen({
@@ -29,7 +30,7 @@ class HomeDetailsScreen extends StatelessWidget {
         backgroundColor: Colors.orange.shade800,
         title: Text(
           this.title,
-          style: TextStyle(color: Colors.white),
+          style: CustomTextStyles.appThemeLightHeaderTitles,
         ),
 
         actions: [
@@ -65,7 +66,7 @@ class HomeDetailsScreen extends StatelessWidget {
 */
       body: Container(
         child: Center(
-          child: Text("Item: $row"),
+          child: Text("Item: $row", style: CustomTextStyles.appThemeLightMenuTitles,),
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterresponsiveweb/HomePage.dart';
+import 'package:flutterresponsiveweb/customtheme.dart';
 import 'package:flutterresponsiveweb/webuser.dart';
 
 class LoginPage extends StatefulWidget {
@@ -15,12 +16,13 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: Icon(Icons.message, color: Colors.white,),
         //backgroundColor: Colors.blueGrey.shade800,
         backgroundColor: Colors.orange.shade800,
         //title: Text('Login', style: TextStyle(color: Colors.deepOrange.shade500),),
         title: Text(
           'Login',
-          style: TextStyle(color: Colors.white),
+          style: CustomTextStyles.appThemeLightHeaderTitles,
         ),
       ),
       body: _buildBody(),
