@@ -13,9 +13,23 @@ class CustomTextStyles {
 
   static TextStyle appThemeLightMenuTitles =
   TextStyle(
-    fontSize: 13.5,
+    fontSize: 15.5,
     fontFamily: GoogleFonts.roboto().fontFamily,
     color: Colors.black,
+  );
+
+  static TextStyle appThemeLightDetailText =
+  TextStyle(
+    fontSize: 15.5,
+    fontFamily: GoogleFonts.roboto().fontFamily,
+    color: Colors.black,
+  );
+
+  static TextStyle appThemeLightButtonText =
+  TextStyle(
+    fontSize: 14.5,
+    fontFamily: GoogleFonts.roboto().fontFamily,
+    color: Colors.white,
   );
 
 }

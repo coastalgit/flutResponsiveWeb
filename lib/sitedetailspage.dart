@@ -68,8 +68,14 @@ class SiteDetailsScreen extends StatelessWidget {
           //child: Text("Item: $row", style: CustomTextStyles.appThemeLightMenuTitles,),
           child: Column(
             children: [
-              Text("Site Id: "+site.siteId, style: CustomTextStyles.appThemeLightMenuTitles,),
-              Text("Location: "+site.siteLocation, style: CustomTextStyles.appThemeLightMenuTitles,),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text("Site Id: "+site.siteId, style: CustomTextStyles.appThemeLightDetailText),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text("Location: "+site.siteLocation, style: CustomTextStyles.appThemeLightDetailText,),
+              ),
             ],
           ),
         ),

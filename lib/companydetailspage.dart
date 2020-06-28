@@ -68,10 +68,20 @@ class CompanyDetailsScreen extends StatelessWidget {
           //child: Text("Item: $row", style: CustomTextStyles.appThemeLightMenuTitles,),
           child: Column(
             children: [
-              Text("Company Id: "+company.companyId, style: CustomTextStyles.appThemeLightMenuTitles,),
-              Text("Sites: "+company.sites.length.toString(), style: CustomTextStyles.appThemeLightMenuTitles,),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text("Company Id: "+company.companyId, style: CustomTextStyles.appThemeLightDetailText,),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text("Sites: "+company.sites.length.toString(), style: CustomTextStyles.appThemeLightDetailText,),
+              ),
               RaisedButton(
-                child: Text('Sites'),
+                child: Padding(
+                  padding: const EdgeInsets.all(4.0),
+                  child: Text('View Sites', style: CustomTextStyles.appThemeLightButtonText),
+                ),
+                color: Colors.blueGrey.shade800,
                 onPressed: () => navigateToSitesView(context),
               ),
             ],
